@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body {
+background-color: aliceblue;
+}
+
+
+header {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    height: 90vh;
+}
+
+#intro {
+            display: block;
+            width: 300px;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+            background-color: white;
+        }
+
+#bird  {
+    position: absolute;
+    width: 205px;
+    height: 250px;
+    background-image: url(/dwlfiles/020302_deadbird/spritesheetflying-01.png);
+    animation: spriteAnimation 1s steps(9) alternate infinite;
+    background-size: cover;
+    cursor: pointer;
+}
+
+@keyframes spriteAnimation {
+    to {
+        background-position: -1845px;
+    }
+}
