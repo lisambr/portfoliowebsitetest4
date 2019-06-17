@@ -1,0 +1,312 @@
+body, main {
+    background-color: azure;
+    font-family: "helvetica", sans-serif;
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    margin: 10%;
+    height: 50%;
+    width: 75%;
+    text-align: center;
+    /*border: 5px solid lightpink;*/
+    background-color: azure;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    vertical-align: middle;
+
+}
+
+aside {
+    border: 1px solid white;
+    background: lightpink;
+    text-align: center;
+}
+
+button {
+    border: 1px solid azure;
+    width: 30%;
+    height: 30px;
+    margin: 5px;
+    background-color: azure
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+/*01MOVE LEFT TO RIGHT*/
+
+.moveLeftToRight {
+    animation: numerouno 2s linear infinite;
+}
+
+@keyframes numerouno {
+    0% {
+        transform: translate(90vw, 0vw);
+    }
+    100% {
+        transform: translate(-90vw, 0vw);
+    }
+}
+
+/*02BACKGROUND*/
+
+.bg_for_main_default {
+    background-color: azure;
+}
+
+.bg_for_main_beach {
+    background-image: url("/dwlfiles/020102_game/island.jpg");
+}
+
+.bg_for_main_mountain {
+    background-image: url("/dwlfiles/020102_game/mountain.jpg");
+}
+
+
+/*03MOVE FROM 30*/
+
+.moveFrom30 {
+    animation: numerotres 2s linear;
+}
+
+@keyframes numerotres {
+    0% {
+        transform: translate(90vw, 0vw);
+    }
+    100%{
+        transform: : translate(-90vw, 0vw);
+    }
+}
+
+/*04JUMP ONE TIME*/
+
+.onejump {
+    transform-origin: 50% 50%;
+    animation: numeroquatro .5s linear;
+    animation-duration: 1s;
+}
+
+@keyframes numeroquatro {
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+
+    25% {
+        transform: translate3d(0, -30%, 0) scale3d(.7, 1.5, 1);
+    }
+
+    50% {
+        transform: translate3d(0, -50%, 0) scale3d(1.5, .7, 1);
+    }
+
+    75% {
+        transform: translate3d(0, -30%, 0) scale3d(.7, 1.5, 1);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+}
+
+
+/*05JUMPING*/
+
+.jumping {
+    transform-origin: 50% 50%;
+    animation: numerocinco 1s linear alternate infinite;
+}
+
+@keyframes numerocinco {
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+
+    25% {
+        transform: translate3d(0, -30%, 0) scale3d(.7, 1.5, 1);
+    }
+
+    50% {
+        transform: translate3d(0, -50%, 0) scale3d(1.5, .7, 1);
+    }
+
+    75% {
+        transform: translate3d(0, -30%, 0) scale3d(.7, 1.5, 1);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+}
+
+/*06FADING*/
+
+.fading {
+    animation: numeroseis 5s infinite;
+}
+
+@keyframes numeroseis {
+    50% {
+        opacity: 0;
+    }
+}
+
+/*07GLOW*/
+
+.glowing {
+    animation: numerosiete 1s infinite alternate;
+}
+
+@keyframes numerosiete {
+    0% {
+        box-shadow: 0 0 10px -10px #aef4af;
+    }
+
+    10% {
+        box-shadow: 0 0 10px 10px #aef4af;
+    }
+
+    20% {
+        box-shadow: 0 0 10px -10px blue;
+    }
+
+    30% {
+        box-shadow: 0 0 10px 10px blue;
+    }
+
+    40% {
+        box-shadow: 0 0 10px -10px yellow;
+    }
+
+    50% {
+        box-shadow: 0 0 10px 10px yellow;
+    }
+
+    60% {
+        box-shadow: 0 0 10px -10px #aef4af;
+    }
+
+    70% {
+        box-shadow: 0 0 10px 10px #aef4af;
+    }
+
+    80% {
+        box-shadow: 0 0 10px -10px blue;
+    }
+
+    90% {
+        box-shadow: 0 0 10px 10px blue;
+    }
+
+    100% {
+        box-shadow: 0 0 10px -10px #aef4af;
+    }
+
+}
+
+/*08SHAKE*/
+
+.shaking {
+    animation: numeroocho 1s infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes numeroocho {
+
+    10%,
+    90% {
+        transform: translate3d(-50px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(50px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-59px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(50px, 0, 0);
+    }
+}
+
+/*09FALLING*/
+
+.falling {
+    animation: numeronueve 7s linear alternate;
+}
+
+@keyframes numeronueve {
+    0% {
+        transform: translate(0vw, 0vw);
+    }
+
+    15% {
+        transform: rotate(90deg);
+    }
+
+    20% {
+        transform: rotate(90deg);
+        transform: translate(0vw, 70vh);
+
+
+    }
+    80% {
+        transform: rotate(90deg);
+        transform: translate(0vw, 0vh);
+
+    }
+}
+
+/*10FLYING*/
+
+.flying {
+    animation: numerodies 4s linear alternate;
+}
+
+@keyframes numerodies {
+    0% {
+        transform: translate(0vw, 0vw);
+    }
+
+    15% {
+        transform: rotate(10deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+        transform: translate(20vw, -40vh);
+
+    }
+
+    40% {
+        transform: rotate(5deg);
+        transform: translate(-100vw, -50vh);
+    }
+
+    60% {
+        transform: rotate(15deg);
+        transform: translate(-30vw, -20vh);
+    }
+
+    80% {
+        transform: rotateY(-25deg);
+        transform: translate(-20vw, 10vh);
+    }
+}
