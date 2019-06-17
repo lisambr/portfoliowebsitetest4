@@ -1,0 +1,51 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #e84f48;
+}
+/*LOGIN PAGE*/
+
+form {
+    background-color: #e84f48;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.kealogo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+input[type=text],
+input[type=password] {
+    background-color: ghostwhite;
+    border-radius: 8px;
+    color: gray;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: ghostwhite;
+    border-radius: 8px;
+    color: gray;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+

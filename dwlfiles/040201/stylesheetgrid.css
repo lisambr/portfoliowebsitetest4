@@ -1,0 +1,257 @@
+/* Typography */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #e84f48;
+}
+
+/* BUTTON */
+
+main > .hero > article > a {
+    background-color: #e84f48;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    margin-top: .75rem;
+}
+
+main > .box1 > ul > li > a {
+    background-color: #e84f48;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: .5rem;
+    margin-top: .75rem;
+}
+
+main > .herolisa > a {
+    background-color: #e84f48;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    margin-top: .75rem;
+}
+
+main > .box2 > ul > li > a {
+    background-color: #e84f48;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: .5rem;
+    margin-top: .75rem;
+}
+
+/*STYLES*/
+
+h1,
+p {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+
+}
+
+h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/*Styling icons*/
+
+.threedots,
+.dwl {
+    width: 20px;
+    height: auto;
+    display: block;
+    background-color: darkgrey;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+.check {
+    width: 20px;
+    height: auto;
+    display: block;
+    background-color: #7BBE82;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+.check {
+    width: 20px;
+    height: auto;
+    display: block;
+    background-color: #7BBE82;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+/* Styles for the calendar aka hero image */
+
+.hero {
+    background: url('assets/calendar.png') center;
+    border-radius: 10px;
+    background-size: cover;
+    padding: 4rem 2rem;
+}
+
+/* Styles for the profile aka herolisa image */
+
+.herolisa {
+    background: url('assets/profilepic.png') center;
+    border-radius: 10px;
+    background-size: contain;
+    padding: 4rem 2rem;
+}
+
+h3{
+    color: white;
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.hero {
+    background: url('assets/calendar.png') center;
+    border-radius: 10px;
+    background-size: cover;
+    padding: 4rem 2rem;
+}
+/* grid styles */
+
+.hero{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+align-items: center;
+grid-gap: 1rem;
+}
+
+.box1 > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-right: 2rem
+}
+
+.box1 > ul > li > ol {
+    display: grid;
+    grid-template-columns: .1fr 4fr;
+}
+
+.box2 > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-right: 2rem
+}
+
+.box2 > ul > li > ol {
+    display: grid;
+    grid-template-columns: .1fr 4fr;
+}
+/* Classroom list */
+
+.box1 > ul > li {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.box1 > ul > li > a {
+    padding: .5rem 1rem;
+    margin: .5rem;
+}
+
+.box1 > ul > li > ol {
+    padding: .5rem;
+}
+
+.box1 > ul > li > ol > li {
+    padding: .5rem;
+}
+/* Profile list */
+
+.box2 > ul > li {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.box2 > ul > li > a {
+    padding: .5rem 1rem;
+    margin: .5rem;
+}
+
+.box2 > ul > li > ol {
+    padding: .5rem;
+}
+
+.box2 > ul > li > ol > li {
+    padding: .5rem;
+}
+
+.folioimg{
+    width: 200px;
+
+}
+/*NAVBAR*/
+nav {
+    overflow: hidden;
+    background-color: #CECECE;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2% 7%;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+nav a:hover {
+    background: #e84f48;
+    color: black;
+}
+
+nav a.active {
+    background-color: white;
+    color: #e84f48;
+}
+
+/* footer */
+footer {
+    background-color: #e84f48;
+}
+
+footer > p {
+    background-color: #e84f48;
+    color: #e84f48;
+    font-size: 10px;
+    text-align: center;
+}
+
+/*animation*/
+
+
+a:hover{
+    transform: translate(5px)
+}
