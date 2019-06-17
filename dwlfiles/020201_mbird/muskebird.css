@@ -1,0 +1,64 @@
+body {
+    background-color: slategrey;
+}
+
+#character {
+    width: 205px;
+    height: 250px;
+    background-image: url();
+    animation: spriteAnimation 1s steps(9) alternate infinite;
+}
+
+@keyframes spriteAnimation {
+    to {
+        background-position: -1845px;
+    }
+}
+
+#scene {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/dwlfiles/020201_mbird/BG.jpg);
+}
+
+#flying {
+    animation: flight 8s alternate infinite;
+}
+
+#character{
+    background-image: url(spritesheetflying-02.png)
+}
+
+@keyframes flight{
+    0% {
+        transform: translate(0vw, 0vw);
+    }
+
+    15% {
+        transform: rotate(10deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+        transform: translate(20vw, 40vh);
+
+    }
+
+    40% {
+        transform: rotate(5deg);
+        transform: translate(50vw, 50vh);
+    }
+
+    60% {
+        transform: rotate(15deg);
+        transform: translate(30vw, 20vh);
+    }
+
+    80% {
+        transform: rotateY(25deg);
+        transform: translate(20vw, 10vh);
+    }
+
+}
